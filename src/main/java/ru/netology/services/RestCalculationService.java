@@ -8,7 +8,7 @@ public class RestCalculationService {
                 count++; // увеличиваем счётчик месяцев отдыха
                 money = (money - expenses) / 3;
             } else {
-                money = money + income;
+                money = money + income - expenses;
             }
         }
         return count;
